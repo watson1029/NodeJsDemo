@@ -1,5 +1,6 @@
 # NodeJsDemo
-* 部署
+* 部署Nodejs
+* npm
 * 语法
 * 应用
 -----
@@ -47,3 +48,27 @@ or
         cd 项目路径
         npm init -f
         npm install express
+
+## FirstDemo
+```js
+    // 使用 require 指令来载入 http 模块
+    var http = require('http');
+    
+    // 创建服务器，并使用 listen 方法绑定 8080 端口
+    // 通过 request, response 参数来接收和响应数据
+    http.createServer(function (request, response) {
+
+        // 发送 HTTP 头部 
+        // HTTP 状态值: 200 : OK
+        // 内容类型: text/plain
+        response.writeHead(200, {'Content-Type': 'text/plain'});
+
+        // 发送响应数据 "Hello World"
+        response.end('Hello World\n');
+    }).listen(8080);
+
+    // 终端打印如下信息
+    console.log('Server running at http://127.0.0.1:8080/');
+```
+        node server.js
+        Server running at http://127.0.0.1:8888/
