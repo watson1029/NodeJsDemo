@@ -49,6 +49,11 @@ or
         npm init -f
         npm install express
 
+### 淘宝npm
+
+        npm install -g cnpm --registry=https://registry.npm.taobao.org
+更多参考资料：http://npm.taobao.org/
+
 ## FirstDemo
 ```js
     // 使用 require 指令来载入 http 模块
