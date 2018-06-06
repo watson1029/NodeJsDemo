@@ -36,3 +36,14 @@ or
 设置证书校验
 
         npm config set strict-ssl false
+
+### 使用npm引用express
+全局安装
+
+        npm install express -g
+        
+局部安装
+
+        cd 项目路径
+        npm init -f
+        npm install express
